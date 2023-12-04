@@ -1,0 +1,3 @@
+00 10 * * * echo "This is a cron triggered event" > /proc/1/fd/1 2>/proc/1/fd/2
+00 10 * * * cd /app && /usr/local/bin/python3.10 main.py > /proc/1/fd/1 2>/proc/1/fd/2
+# 10h todos os dias inicia nova extracção de dados
